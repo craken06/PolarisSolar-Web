@@ -1,0 +1,261 @@
+body{
+    margin: 0;
+}
+/*Globales*/
+
+a{
+    text-decoration:none ;
+}
+li{
+    list-style: none;
+}
+.Contenedor{
+    width: 90%;
+    margin: 0 auto;
+
+}
+img{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+/*HEADER*/
+
+.Index{
+    background-image: url(../img/HomeBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 45rem;
+}
+.ContenedorHeader{
+    display: flex ;
+    flex-direction: column;
+    height: 45rem;
+    background-color: gray;
+}
+
+/*Barra*/
+.Barra{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     
+}
+.BarraInicio{
+    background-color: rgb(238,238,238);
+}
+.Barra h1{
+    color: black;
+    font-size: 3rem;
+    margin: 2rem 1rem; 
+}
+.MenuNavegacion{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.MenuNavegacion .menuLink{
+    color: rgb(51,51,51);
+    font-size: 2rem;
+}
+.liMenu{
+    padding: 0.5rem;
+}
+.Titulo{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 1rem auto;
+    width: 90%;
+    color: black;
+    line-height: 3rem;
+}
+@media only screen and (min-width:1024px){
+    .ContenedorHeader{
+        justify-content: space-between;
+    }
+    .Barra{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 1, 5rem;
+    }
+    .Barra h1{
+        font-size: 4rem;
+    }
+    .MenuNavegacion{
+        flex-direction: row;
+    }
+    .MenuNavegacion a:hover{
+        color: green;
+        transition: color .25s;
+    }
+    .Titulo{
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+}
+/*Sobre Nosotros*/
+.SeccionNosotros{
+    margin-top: 5rem ;
+    position: relative;
+}
+.ImagenesNosotros{
+    margin-bottom: 9rem;
+}
+.Img1{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.SobreNosotros h2{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.SobreNosotros p{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5;
+}
+@media only screen and (min-width:1024px){
+    .ContenedorNosotros{
+        display: grid;
+        grid-template-columns: repeat((2,1fr));
+    }
+    .ImagenesNosotros{
+        margin-bottom: 0rem;
+
+    }
+    .ImagenesNosotros:hover .Img1{
+        border-radius: 5rem;
+        transform: scale(1.1);
+        transition: all 0.5s ease 0s;
+    }
+    .Img1{
+        width: 100%;
+        transition: all 0.5s;
+    }
+}
+/*Seccion Paneles*/
+.Paneles h2{
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+}
+.ContenedorProductos{
+background-color: #252323;
+padding: 1rem;
+
+}
+
+.ContenedorProductos h3{
+    font-size: 2.2rem;
+    text-align: center;
+    border-bottom: 5px solid white;
+    border-radius: 1px;
+    padding-bottom: 1rem;
+    color: whitesmoke;
+}
+.ContenedorProductos p{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    color: whitesmoke;
+}
+.Producto{
+    margin: 2rem 0rem;
+    cursor: pointer;
+}
+@media only screen and (min-width:1024px){
+    .ContenedorProductos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 3rem;
+    
+    }
+    .Producto:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ;
+    }
+    .Producto{
+        transition: all .5s;
+    }
+}
+
+/*Contenedor Pantalla*/
+.ContenedorPantalla{
+    position: relative;
+    height: auto;
+}
+.parallax::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.ContenedorPantalla::before{
+    content: "";
+    background-image: url("/img/Paneles/Panel1.jpg");
+    background-attachment: fixed;
+}
+.BackgroundPantalla{
+    background-color: rgba(0, 0, 0, 0.288);
+    z-index: 1;
+    position: relative;
+}
+.ContenedorTexto{
+    position: relative;
+    text-align: center;
+}
+.ContenedorTexto h2{
+    font-size: 4rem;
+    color: white;
+}
+@media only screen and (min-width:1024px){
+    .Contenedor h2{
+        font-size: 6rem;
+        line-height: 10rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+/*Contenedor Informacion*/
+.InformacionDiv{
+    background-color: #252323;
+    display:flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+    border-radius: 1rem;
+}
+.Borde{
+    border: 1px solid white;
+    margin: .5rem;
+    border-radius: 1rem;
+    width: 22.7rem;
+}
+.InformacionDiv p{
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+@media only screen and (min-width:1024px){
+    .ContInfoTortas{
+        display: grid;
+        grid-template-columns: (3,1fr);
+        gap: 2rem;
+
+    }
+    .InformacionDiv{
+        margin: 1rem 0rem;
+    }
+}

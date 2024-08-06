@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        link(rel="stylesheet", href="/css/style.css")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Polaris Solution
+    header.Header 
+        div.Index(class="ContenedorHeader")
+            .Barra.BarraInicio 
+                a(href="/")
+                    h1 Polaris Solution
+                nav.MenuNavegacion 
+                    li.liMenu 
+                        a.menuLink(href="/Tienda") Productos
+                    li.liMenu 
+                        a.menuLink(href="/Nosotros") Sobre Nosotros
+                    li.liMenu 
+                        a.menuLink(href="/Iniciar-Sesion") Iniciar sesion
+            h1.Titulo Paneles solares
+    body 
+        block contenido
+    footer 
+    p Todos los derechos reservados a Lucas Astorga
+    

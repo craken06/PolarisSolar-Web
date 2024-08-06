@@ -1,0 +1,51 @@
+extends layout 
+
+block contenido
+    //--Sobre Nosotros --//
+    section.Seccion.SeccionNosotros
+        .Contenedor.ContenedorNosotros 
+            .ImagenesNosotros 
+                img.Img1(src="/img/Paneles/Panel1.jpg", alt="Paneles")
+            .SobreNosotros 
+                h2 Sobre nosotros 
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores vero molestias odit temporibus ut. Nostrum velit ipsum minima omnis quas rem recusandae eum, nemo harum, odio sint ipsa earum et.
+    //--Seccion Paneles --//
+    section.Seccion.Paneles
+        h2 Alguno de nuestros paneles 
+            .ContenedorPaneles
+                .Contenedor.ContenedorProductos
+                    .Producto 
+                        .ImagenPaneles 
+                            img(src="img/Paneles/panel-solar-policristalino-90w-ps-90-700x700.webp", alt="")
+                            h3 Panel Solar 90W
+                            p Descripcion breve del panel
+                    .Producto 
+                        .ImagenPaneles 
+                            img(src="img/Paneles/panel-solar-policristalino-90w-ps-90-700x700.webp", alt="")
+                            h3 Panel Solar 90W
+                            p Descripcion breve del panel
+                    .Producto 
+                        .ImagenPaneles 
+                            img(src="img/Paneles/panel-solar-policristalino-90w-ps-90-700x700.webp", alt="")
+                            h3 Panel Solar 90W
+                            p Descripcion breve del panel
+    //--Seccion Parallax --//
+    section.Seccion.ContenedorPantalla.parallax
+        .BackgroundPantalla 
+            .Contenedor.ContenedorTexto 
+                h2 La ultima tecnologia en sistemas fotovoltaicos
+    //--Informacion --//
+    section.Seccion.Info 
+        h2 Informacion Importante 
+        .Contenedor.ContInfoTortas
+            .InformacionDiv 
+                .Borde 
+                    p Envios a todo el Pais.
+            .InformacionDiv 
+                .Borde 
+                    p Telefono: 123456789.
+            .InformacionDiv 
+                .Borde 
+                    p Establecimiento Principal: Caracas 25, CABA, Argentina.
+
+

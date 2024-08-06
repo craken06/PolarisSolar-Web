@@ -1,0 +1,19 @@
+{
+  "name": "polaris-solution",
+  "version": "1.0.0",
+  "description": "Pagina Tienda Web de Polaris Solutions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js"
+  },
+  "author": "Lucas Astorga",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
